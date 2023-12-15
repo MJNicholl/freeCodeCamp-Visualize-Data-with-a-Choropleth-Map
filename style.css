@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #2b2b2b;
+}
+
+h1, div {
+    margin-top: 20px;
+}
+
+h1, #description {
+    color: white;
+}
+
+#tooltip {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: darkslategray;
+    color: white;
+    transition: 1s;
+    border-radius: 5px;
+    visibility: hidden;
+    padding: 10px;
+}
+
+#legend {
+    margin-top: 50px;
+    margin-left: 35px;
+    height: 70px;
+}
+
+text {
+    padding: 10px;
+}
+
+.county:hover {
+    fill: white;
+}
+
+.legend-item:hover {
+    outline: 2px solid white;
+}

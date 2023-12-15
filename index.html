@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choropleth Map</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- D3 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <!-- TopoJSON CDN 
+    TopoJSON is an extension from the GeoJSON which aims to remove redundancy in geospatial topological data
+    such as common boundries between areas which are called arcs which are segments of paths.
+    The data format in TopoJSON can look convoluted since it's focused in efficiency, losing readability
+    hence the use of this CDN, to be able to convert TopoJSON to GeoJSON in order to draw projections -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+</head>
+<body>
+    <h1 id="title">United States Educational Attainment</h1>
+    <div id="container"></div>
+    <svg id="legend"></svg>
+    <div id="description">Percentage of Adult Population Age 25 Per Area of USA with Bachelor Degree or Higher (2010-2014)</div>
+    <div id="tooltip" data-education=""></div>
+    <script src="script.js"></script>
+    <!-- Test CDN -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
